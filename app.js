@@ -14,5 +14,6 @@ const printProfileData = profileDataArr => {
 };
 
 const generatePage = () => 'Name: Jane, Github: janehub';
+console.log(generatePage());
 
 printProfileData(profileDataArgs);
