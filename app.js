@@ -13,7 +13,7 @@ const printProfileData = profileDataArr => {
   profileDataArr.forEach(profileItem => console.log(profileItem));
 };
 
-const generatePage = () => 'Name: Jane, Github: janehub';
+const generatePage = (userName, githubName) => `Name: ${userName}, Github: ${githubName}`;
 console.log(generatePage());
 
 printProfileData(profileDataArgs);
