@@ -22,6 +22,7 @@ const generatePage = (userName, githubName) => {
     GitHub: ${githubName}
   `;
 };
+console.log(name, github);
 console.log(generatePage(name, github));
 
 printProfileData(profileDataArgs);
