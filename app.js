@@ -16,10 +16,22 @@ const printProfileData = profileDataArr => {
   profileDataArr.forEach(profileItem => console.log(profileItem));
 };
 
-const generatePage = (userName, githubName) => {
+const generatePage = (name, github) => {
   return `
-    Name: ${userName}
-    GitHub: ${githubName}
+  <!DOCTYPE html> 
+  <html lang="en"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Demo</title>
+  </head>
+
+  <body>
+    <h1>${name}</h1>
+    <h2><a href="https://github.com/${github}">Github</a></h2>
+  </body>
+  </html>
   `;
 };
 console.log(name, github);
