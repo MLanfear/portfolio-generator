@@ -87,7 +87,7 @@ Add a New Project
       } else {
         return portfolioData;
       }
-});
+})
 
 promptUser()
   .then(promptProject)
