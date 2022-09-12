@@ -89,7 +89,6 @@ const promptProject = portfolioData => {
       } else {
         return portfolioData;
       }
-    };
 ]};
 
 promptUser().then(answers => console.log(answers))
