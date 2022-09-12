@@ -44,11 +44,6 @@ const promptProject = portfolioData => {
   // If there's no 'projects' array property, create one
   if (!portfolioData.projects) {
     portfolioData.projects = [];
-      console.log(`
-      =================
-      Add a New Project
-      =================
-      `);
   
   return inquirer.prompt([
     {
