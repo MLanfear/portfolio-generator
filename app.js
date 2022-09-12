@@ -1,7 +1,5 @@
 const inquirer = require('inquirer');
 
-console.log(inquirer)
-
 //const fs = require('fs');
 
 //const generatePage = require('./sec/page-template');
