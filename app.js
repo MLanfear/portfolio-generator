@@ -43,6 +43,12 @@ const promptProject = portfolioData => {
     portfolioData.projects = [];
   }
   
+    console.log(`
+       =================
+       Add a New Project
+       =================
+         `);     
+  
   return inquirer.prompt([
     {
       type: 'input',
