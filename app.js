@@ -90,12 +90,11 @@ const promptProject = portfolioData => {
    } else {
      return portfolioData;
    }
- })
+ });
 
 
   
-promptUser()
-  .then(promptProject)
+promptUser().then(promptProject)
   .then(portfolioData => {
     console.log(portfolioData);
 });
