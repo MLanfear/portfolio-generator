@@ -138,7 +138,7 @@ const promptProject = portfolioData => {
             return false;
           }
         }
-      }
+      },
     
       {
         type: 'confirm',
