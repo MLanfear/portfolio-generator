@@ -80,8 +80,9 @@ const promptProject = portfolioData => {
       name: 'confirmAddProject',
       message: 'Would you like to enter another project?',
       default: false
-    };
-    .then(projectData => {
+    }
+    
+    then(projectData => {
       portfolioData.projects.push(projectData);
       if (projectData.confirmAddProject) {
         return promptProject(portfolioData);
