@@ -91,6 +91,8 @@ Add a New Project
 };
 
 promptUser()
-  .then(answers => console.log(answers))
   .then(promptProject)
-  .then(projectAnswers => console.log(projectAnswers));
+  .then(portfolioData => {
+    console.log(portfolioData);
+  });
+  
