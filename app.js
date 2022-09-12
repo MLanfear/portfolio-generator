@@ -91,14 +91,13 @@ const promptProject = portfolioData => {
          return portfolioData;
         }
 
-})
 
   
 promptUser()
   .then(promptProject)
   .then(portfolioData => {
     console.log(portfolioData);
-})
+});
   
 
   
