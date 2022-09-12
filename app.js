@@ -49,7 +49,7 @@ const promptProject = portfolioData => {
        =================
          `);     
   
-  return inquirer.prompt([.then(projectData => {
+  return inquirer.prompt.then(projectData => {([
     portfolioData.projects.push(projectData);
     if (projectData.confirmAddProject) {
       return promptProject(portfolioData);
