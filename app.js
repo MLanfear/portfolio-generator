@@ -83,7 +83,7 @@ const promptProject = portfolioData => {
       } else {
         return portfolioData;
       }
-})
+});
 
 promptUser()
   .then(promptProject)
