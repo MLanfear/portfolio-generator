@@ -94,7 +94,7 @@ const promptProject = portfolioData => {
 
 
   
-console.log(promptUser())
+promptUser()
     .then(promptProject)
     .then(portfolioData => {
       console.log(portfolioData);
