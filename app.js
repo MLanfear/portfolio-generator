@@ -79,7 +79,7 @@ const promptProject = portfolioData => {
     }
     
 ]);
-    then(projectData => {
+    .then(projectData => {
       portfolioData.projects.push(projectData);
       if (projectData.confirmAddProject) {
         return promptProject(portfolioData);
@@ -88,9 +88,11 @@ const promptProject = portfolioData => {
       }
 });
   
-promptUser().then(answers => console.log(answers))
+promptUser()
   .then(promptProject)
-  .then(projectAnswers => console.log(projectAnswers));
+  .then(portfolioData => {
+    console.log(portfolioData);
+});
   
 
   
