@@ -41,9 +41,7 @@ const promptProject = portfolioData => {
   if (!portfolioData.projects) {
     portfolioData.projects = [];
   }
-=================
-Add a New Project
-=================
+  
   return inquirer.prompt([
     {
       type: 'input',
