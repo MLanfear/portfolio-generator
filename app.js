@@ -57,7 +57,6 @@ const promptProject = portfolioData => {
     } else {
       return portfolioData;
     }
-    });
       {
         type: 'input',
         name: 'name',
