@@ -36,6 +36,10 @@ const promptUser = () => {
     ]);
 };
 
+promptUser().then(answers => console.log(answers))
+  .then(promptProject)
+  .then(projectAnswers => console.log(projectAnswers));
+
 const promptProject = portfolioData => {
   // If there's no 'projects' array property, create one
   if (!portfolioData.projects) {
@@ -91,7 +95,4 @@ const promptProject = portfolioData => {
       }
 ]};
 
-promptUser().then(answers => console.log(answers))
-  .then(promptProject)
-  .then(projectAnswers => console.log(projectAnswers));
   
