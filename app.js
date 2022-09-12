@@ -49,7 +49,6 @@ const promptProject = portfolioData => {
       Add a New Project
       =================
       `);
-    }
   
   return inquirer.prompt([
     {
