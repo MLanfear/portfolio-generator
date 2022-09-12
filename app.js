@@ -89,7 +89,7 @@ const promptProject = portfolioData => {
         return portfolioData;
       }
   
-});
+})
 
 promptUser()
   .then(promptProject)
