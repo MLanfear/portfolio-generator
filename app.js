@@ -78,8 +78,7 @@ const promptProject = portfolioData => {
       default: false
     }
     
-
-  ]);
+]);
     then(projectData => {
       portfolioData.projects.push(projectData);
       if (projectData.confirmAddProject) {
@@ -87,7 +86,7 @@ const promptProject = portfolioData => {
       } else {
         return portfolioData;
       }
-};
+});
   
 promptUser().then(answers => console.log(answers))
   .then(promptProject)
