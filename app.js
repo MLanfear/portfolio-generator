@@ -1,5 +1,7 @@
 const fs = require('fs');
 
+const generatePage = require('./sec/page-template.js');
+
 const profileDataArgs = process.argv.slice(2);
 
 const [name, github] = profileDataArgs;
