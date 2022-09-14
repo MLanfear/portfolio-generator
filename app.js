@@ -169,7 +169,7 @@ promptUser()
       console.log('Page created! Check out index.html in this directory to see it!');
 
       fs.copyFile('./sec/style.css', './dist/style.css', err => {
-        if (err) {
+       if (err) {
           console.log(err);
           return;
         }
