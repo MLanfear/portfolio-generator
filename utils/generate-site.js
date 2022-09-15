@@ -18,9 +18,9 @@ const writeFile = fileContent => {
     });
 };
 
-const copyFile = fileType => {
+const copyFile = () => {
     return new Promise((resolve, reject) => {
-        fs.copyFile('./dist/index.html', fileType, err => {
+        fs.copyFile('./dist/index.html', writeFile, err => {
             if (err) {
                 reject(err);
                 return;
