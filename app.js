@@ -154,9 +154,7 @@ const promptProject = portfolioData => {
     });
 };
 
-
-  
-promptUser()
+ promptUser()
   .then(promptProject)
   .then(portfolioData => {
     return generatePage(portfolioData);
